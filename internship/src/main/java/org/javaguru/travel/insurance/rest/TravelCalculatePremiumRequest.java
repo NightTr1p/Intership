@@ -6,21 +6,20 @@ public class TravelCalculatePremiumRequest {
 
     private String personFirstName;
     private String personLastName;
-
     private Date agreementDateFrom;
-
     private Date agreementDateTo;
-    TravelCalculatePremiumRequest() {
 
-    }
+    public TravelCalculatePremiumRequest() {}
 
-    public void StartTravelCalculatePremiumRequest(String firstName, String lastName, Date from, Date to) {
+    public TravelCalculatePremiumRequest(String firstName,
+                                                   String lastName,
+                                                   Date from,
+                                                   Date to) {
         personFirstName = firstName;
         personLastName = lastName;
         agreementDateFrom = from;
         agreementDateTo = to;
     }
-
 
     public String getPersonFirstName() {
         return personFirstName;
