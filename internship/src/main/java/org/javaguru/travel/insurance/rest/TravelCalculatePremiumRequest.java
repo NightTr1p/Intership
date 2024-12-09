@@ -21,6 +21,7 @@ public class TravelCalculatePremiumRequest {
         agreementDateTo = to;
     }
 
+
     public String getPersonFirstName() {
         return personFirstName;
     }
